@@ -35,5 +35,3 @@ except ImportError:
     pass
 
 TEMPLATES[0]['OPTIONS']['debug'] = DEBUG  # NOQA
-TEMPLATES[1]['OPTIONS']['cache_size'] = 1000000 if DEBUG else -1  # NOQA
-TEMPLATES[1]['OPTIONS']['auto_reload'] = DEBUG  # NOQA
