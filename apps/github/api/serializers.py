@@ -35,7 +35,7 @@ class UserSerializer(serializers.Serializer):
     id = serializers.IntegerField()
     node_id = serializers.CharField()
     avatar_url = serializers.CharField()
-    url = serializers.CharField()
+    html_url = serializers.CharField()
     type = serializers.CharField()
 
 
