@@ -1,0 +1,18 @@
+bpython
+django
+django-cors-headers
+django-modeltranslation
+django-redis-cache
+-e git+https://github.com/darklow/django-suit#egg=django-suit
+django-solo
+djangorestframework
+drf-yasg
+flex
+flake8
+hiredis
+pep8
+pytz
+psycopg2-binary
+redis
+requests
+uWSGI
