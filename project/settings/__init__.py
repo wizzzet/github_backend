@@ -70,8 +70,6 @@ LOCALE_PATHS = (
     os.path.normpath(os.path.join(SITE_ROOT, 'locale')),
 )
 
-SECRET_KEY = r'WVcLU)kW!Am8Wb1&hq1AMZ$K(TdV4MCxqltSBtsrzztuRE*V9PnwzUE#6$eNe8D'
-
 template_context_processors = (
     'django.contrib.auth.context_processors.auth',
     'django.template.context_processors.debug',
