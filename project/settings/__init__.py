@@ -224,8 +224,8 @@ SWAGGER_SETTINGS = {
 }
 
 GITHUB_API_URL = 'https://api.github.com'
-GITHUB_USERNAME = 'XXXX'
-GITHUB_PASSWORD = 'XXXX'
+GITHUB_USERNAME = None
+GITHUB_PASSWORD = None
 
 try:
     from project.settings.local_settings import *  # NOQA

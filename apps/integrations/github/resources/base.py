@@ -72,10 +72,15 @@ class GitHubResource(ABC):
         headers = self.get_headers()
 
         method = getattr(requests, self.method.lower())
+        if settings.GITHUB_USERNAME and settings.GITHUB_PASSWORD:
+            auth = (settings.GITHUB_USERNAME, settings.GITHUB_PASSWORD)
+        else:
+            auth = None
+
         response = method(
             url,
             headers=headers,
-            auth=(settings.GITHUB_USERNAME, settings.GITHUB_PASSWORD)
+            auth=auth
         )
 
         if response.status_code < 300:
