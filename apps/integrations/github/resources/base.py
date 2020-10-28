@@ -72,7 +72,11 @@ class GitHubResource(ABC):
         headers = self.get_headers()
 
         method = getattr(requests, self.method.lower())
-        response = method(url, headers=headers)
+        response = method(
+            url,
+            headers=headers,
+            auth=(settings.GITHUB_USERNAME, settings.GITHUB_PASSWORD)
+        )
 
         if response.status_code < 300:
             self.result = response.json()
